@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Jakob Hostnik</title>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./styles/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="styles/MaterialDesignIcons/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="LightBox/lightbox.css" rel="stylesheet">
+		<script src="LightBox/lightbox.js"></script>
+		<style>
+			.iconTile,.lightbox img{width:185px}
+			.iconTile,.lightbox{height:120px;overflow:hidden}
+			body,h1,h2,h3,h4,h5,h6,html{font-family:Roboto,sans-serif}
+			footer a{text-decoration:none}
+			.lightbox{display:inline-block;border-radius:5px;border:1px solid #BDBDBD}
+			.iconTile{font-size:8em;text-align:center;border:1px solid #BDBDBD;border-radius:5px}
+			.iconTile.explore:hover{color:#00008b}
+			.iconTile.pdf:hover{color:#8b0000}
+			h2{text-transform:uppercase;font-size:25px;vertical-align:middle!important}
+			i.material-icons{vertical-align:top!important}
+			.w3-teal{padding:0}
+			.outer-testdome-certificate-stamp{position:relative;display:inline-block;width:185px;height:120px;margin:1px;padding-top:40px;padding-left:30px;padding-right:5px;font-weight:700;border:3px solid transparent;text-align:center;text-decoration:none}
+			.testdome-certificate-stamp{font-weight:400;position:absolute!important;top:0;left:0;display:inline-block!important;margin:0;overflow:hidden;white-space:nowrap;animation-duration:1s;animation-name:slideright;animation-fill-mode:forwards;border-top-left-radius:10px;border-bottom-left-radius:10px}
+			.testdome-certificate-stamp:hover{animation-duration:1s;animation-name:slideleft;animation-fill-mode:forwards}
+			@keyframes slideright{from{width:0;}to{width:185px;}}
+			@keyframes slideleft{from{width:185px;}to{width:0;}}
+		</style>
+		<!-- google-analytics-->
+		<script>
+			<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-96843133-1', 'auto');
+  			ga('send', 'pageview');
+		</script>
+		<script>
+			function addEventListenersForThumbnails() {
+			    var lbs = document.querySelectorAll(".lightbox img");
+			    for (let i = 0; i < lbs.length; i++) {
+			        lbs[i].addEventListener("mouseover", function(e) {
+			            e.target.src = e.target.getAttribute("src").slice(0, -10) + ".jpg";
+			        });
+			        lbs[i].addEventListener("mouseout", function(e) {
+			            e.target.src = e.target.getAttribute("src").slice(0, -4) + "_black.jpg";
+			        });
+			    }
+			}
+			//lightbox
+			document.addEventListener("DOMContentLoaded", function() {
+			    var init = new lightBox();
+			    addEventListenersForThumbnails();
+			});
+		</script>
+	</head>
+	<body class="w3-light-grey">
+		<!-- Page Container -->
+		<div class="w3-content w3-margin-top" style="max-width:1400px;">
+			<!-- The Grid -->
+			<div class="w3-row-padding">
+				<!-- Left Column -->
+				<div class="w3-third w3-padding-large">
+					<div class="w3-white w3-text-grey w3-card-24">
+						<div class="w3-display-container">
+							<img src="./images/avatar.jpg" style="width:100%" alt="Avatar">
+							<div class="w3-display-bottomleft w3-container w3-text-white">
+								<h2>Jakob Hostnik</h2>
+							</div>
+						</div>
+						<div class="w3-container">
+							<p><i class="material-icons w3-margin-right w3-large w3-text-teal">work</i>Software developer</p>
+							<p><i class="material-icons w3-margin-right w3-large w3-text-teal">home</i>Šmartno pri Litiji, Slovenia</p>
+							<p><i class="material-icons w3-margin-right w3-large w3-text-teal">email</i>jakob.hostnik@gmail.com</p>
+							<p><i class="material-icons w3-margin-right w3-large w3-text-teal">contact_phone</i>+386 51 232 527</p>
+							<hr>
+							<p class="w3-large"><b><i class="material-icons w3-margin-right w3-text-teal">rowing</i>Skills</b>
+							</p>
+							<p>Java (desktop, android, console, web)</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
+							</div>
+							<p>Html (5)</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
+							</div>
+							<p>JavaScript, jquery (+UI +plugins)</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
+							</div>
+							<p>CSS (3)</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
+							</div>
+							<p>C#</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+							</div>
+							<p>asp. net (webforms, MVC(5)+entity framework (6))</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+							</div>
+							<p>SQL (MySQL, MS SQL, postgress)</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+							</div>
+							<p>PhP (Yii framework)</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+									<div class="w3-center w3-text-white">80%</div>
+								</div>
+							</div>
+							<p>linux, linux server</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+							</div>
+							<p>C/C++</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+							</div>
+							<p>Microsoft Excel plugins</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+							</div>
+							<p>Photoshop</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
+							</div>
+							<p>GIMP</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:20%">20%</div>
+							</div>
+							<p>Unity</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small">
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:10%">10%</div>
+							</div>
+							<br>
+							<p class="w3-large w3-text-theme"><b><i class="material-icons w3-margin-right w3-text-teal">language</i>Languages</b>
+							</p>
+							<p>Slovene</p>
+							<div class="w3-light-grey w3-round-xlarge">
+								<div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+							</div>
+							<p>English</p>
+							<div class="w3-light-grey w3-round-xlarge">
+								<div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
+							</div>
+							<p>German</p>
+							<div class="w3-light-grey w3-round-xlarge">
+								<div class="w3-round-xlarge w3-teal" style="height:24px;width:15%"></div>
+							</div>
+							<br>
+						</div>
+					</div>
+					<br>
+					<!-- End Left Column -->
+				</div>
+				<!-- Right Column -->
+				<div class="w3-twothird w3-padding-large">
+					<div class="w3-container w3-card-24 w3-white w3-margin-bottom">
+						<h2 class="w3-text-grey w3-padding-16"><i class="material-icons w3-margin-right w3-xxlarge w3-text-teal">work</i>Work Experience</h2>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Full stack developer / DSE Group d.o.o.</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>Oct 2016</h6>
+							<p>PhP (yii framework), MySQL, linux server, Html5, jQuery, CSS3</p>
+							<hr>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Full stack developer / Agitavit solutions d.o.o.</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>Jun 2016 - Aug 2016</h6>
+							<p>C# ASP.net (WebForms, MVC5+ Entity Framework 6) HTML5, CSS3, jQuery, MSSQL</p>
+							<br>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Full stack developer / Agitavit solutions d.o.o.</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>Jul 2015 - Aug 2015</h6>
+							<p>C# ASP.net (WebForms, MVC5+ Entity Framework 6) HTML5, CSS3, jQuery, MSSQL</p>
+							<br>
+						</div>
+					</div>
+					<!--Certifications-->
+					<div class="w3-container w3-card-24 w3-white w3-margin-bottom">
+						<h2 class="w3-text-grey w3-padding-16"><i class="material-icons w3-margin-right w3-xxlarge w3-text-teal">grade</i>Certifications</h2>
+						<div class="w3-container">
+							<a target="_blank" href="https://www.testdome.com/cert/wnmi7ybxvm" class="outer-testdome-certificate-stamp">
+								Java, ranking in the Top 10%
+								<div class="testdome-certificate-stamp gold"><span class="testdome-certificate-name">Jakob Hostnik</span><span class="testdome-certificate-test-name">Java </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></div>
+							</a>
+							<script type="text/javascript">var stylesheet = "https://www.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+							<a target="_blank" href="https://www.testdome.com/cert/6ijpsz24fd" class="outer-testdome-certificate-stamp">
+								C#, ranking in the Top 10% 
+								<div class="testdome-certificate-stamp gold"><span class="testdome-certificate-name">Jakob Hostnik</span><span class="testdome-certificate-test-name">C# </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></div>
+							</a>
+							<script type="text/javascript">var stylesheet = "https://www.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print",document.getElementsByTagName("head")[0].appendChild(link);</script>
+						</div>
+						<br/>
+					</div>
+					<!--Side projects-->
+					<div class="w3-container w3-card-24 w3-white w3-margin-bottom">
+						<h2 class="w3-text-grey w3-padding-16"><i class="material-icons w3-margin-right w3-xxlarge w3-text-teal">highlight</i>Side projects</h2>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Smart house implementation</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>2017</h6>
+							<p>I implemented smarthouse system based on OpenHAB and MQTT protocol.</p>
+							<div class="lightbox" data-big="images/OpenHAB1.png">
+								<img src="images/OpenHAB1_tn_black.jpg" />
+							</div>
+							<div class="lightbox" data-big="images/OpenHAB2.png">
+								<img src="images/OpenHAB2_tn_black.jpg" />
+							</div>
+							<div class="lightbox" data-big="images/OpenHAB3.jpg">
+								<img src="images/OpenHAB3_tn_black.jpg" />
+							</div>
+							<div class="lightbox" data-big="images/OpenHAB4.png">
+								<img src="images/OpenHAB4_tn_black.jpg" />
+							</div>
+							<a target="_blank" class="iconTile material-icons pdf" href="contents/OpenHAB.pdf">picture_as_pdf</a>
+							<br/>
+							<hr/>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Simple snake game framework</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right explore">date_range</i>2016</h6>
+							<p>I built simple framework for a snake game in Java.</p>
+							<a target="_blank" class="iconTile material-icons explore" href="http://java-snake.com-1.rf.gd">explore</a>
+							<br/>
+							<hr/>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>The labyrinth</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>2016</h6>
+							<p>Me and my school mate created a small wooden labyrinth. You put a small ball in it and controll the labyrinth's slope with the slope of your hand. We even wrote a scientific article for the magazine Svet Elektronike.</p>
+							<div class="lightbox" data-big="images/labyrinth1.jpg">
+								<img src="images/labyrinth1_tn_black.jpg" />
+							</div>
+							<div class="lightbox" data-big="images/labyrinth2.jpg">
+								<img src="images/labyrinth2_tn_black.jpg" />
+							</div>
+							<a target="_blank" class="iconTile material-icons explore" href="https://www.svet-el.si/o-reviji/samogradnje/3855-242-51">explore</a>
+							<br/>
+							<hr/>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Coffee maker</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>2016</h6>
+							<p>I created coffe maker and seminar paper about it. </p>
+							<div class="lightbox" data-big="images/coffeeMaker.jpg">
+								<img src="images/coffeeMaker_tn_black.jpg" />
+							</div>
+							<div class="lightbox" data-big="images/coffeeMaker2.jpg">
+								<img src="images/coffeeMaker2_tn_black.jpg" />
+							</div>
+							<a target="_blank" class="iconTile material-icons pdf" href="contents/KavniAvtomat.pdf">picture_as_pdf</a>
+							<br/>
+							<hr/>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Research paper about online advertising</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>2015 - 2016</h6>
+							<p>The paper was made with my school mate and was ranked on a national level.</p>
+							<br>
+							<a target="_blank" class="iconTile material-icons pdf" href="contents/OglasevanjeNaSpletu.pdf">picture_as_pdf</a>
+							<br/>
+							<hr/>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>PlusPage</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>2015</h6>
+							<p>Second year of gymnasium I created PlusPage - personal dashboard page, which was similar to dead iGoogle.</p>
+							<div class="lightbox" data-big="images/pluspage1.jpeg">
+								<img src="images/pluspage1_tn_black.jpg" />
+							</div>
+							<div class="lightbox" data-big="images/pluspage2.jpg">
+								<img src="images/pluspage2_tn_black.jpg" />
+							</div>
+							<div class="lightbox" data-big="images/pluspage3.png">
+								<img src="images/pluspage3_tn_black.jpg" />
+							</div>
+							<br/>
+							<br/>
+						</div>
+					</div>
+					<!--Education -->
+					<div class="w3-container w3-card-24 w3-white w3-margin-bottom">
+						<h2 class="w3-text-grey w3-padding-16"><i class="material-icons w3-margin-right w3-xxlarge w3-text-teal">school</i>Education</h2>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Unofficial linux course</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>2015</h6>
+							<hr>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Technical gymnasium</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>2014 - 2017</h6>
+							<hr>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity"><b>Primary school</b></h5>
+							<h6 class="w3-text-teal"><i class="material-icons w3-margin-right">date_range</i>2005 - 2014</h6>
+							<br>
+						</div>
+					</div>
+					<!-- End Right Column -->
+				</div>
+				<!-- End Grid -->
+			</div>
+			<!-- End Page Container -->
+		</div>
+		<footer class="w3-container w3-teal w3-center w3-margin-top">
+			<p>Find me on social media.</p>
+			<a href="https://www.facebook.com/jakob.hostnik" target="_blank" class="mdi mdi-facebook-box w3-hover-text-indigo w3-large"></a>
+			<a href="https://bitbucket.org/jakobhostnik/" target="_blank" class="mdi mdi-bitbucket w3-hover-text-indigo w3-large"></a>
+			<a href="https://github.com/jakobhostnik" target="_blank" class="mdi mdi-github-box w3-hover-text-grey w3-large"></a>
+			<a href="https://www.linkedin.com/in/jakob-hostnik-803a3311b/" target="_blank" class="mdi mdi-linkedin-box w3-hover-text-indigo w3-large"></a>
+		</footer>
+	</body>
+</html>

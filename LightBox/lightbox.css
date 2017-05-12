@@ -1,0 +1,116 @@
+/*
+	.__  .__       .__     __ ___.                 
+	|  | |__| ____ |  |___/  |\_ |__   _______  ___
+	|  | |  |/ ___\|  |  \   __\ __ \ /  _ \  \/  /
+	|  |_|  / /_/  >   Y  \  | | \_\ (  <_> >    < 
+	|____/__\___  /|___|  /__| |___  /\____/__/\_ \
+	       /_____/      \/         \/            \/
+		   		
+				by Łukasz Duda
+				License: GPLv3
+*/
+.lightbox {
+	cursor: pointer;
+}
+
+.lightbox-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.95);
+	overflow: hidden;
+	z-index: 9999999;
+}
+
+.lightbox-exit,
+.lightbox-button-left,
+.lightbox-button-right {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url("img/icons_white.svg");
+	background-size: 60px 20px;
+	z-index: 99999999999;
+	cursor: pointer;
+}
+
+.lightbox-exit {
+	top: 25px;
+	right: 25px;
+	background-position: 0 0;
+}
+
+.lightbox-button-left,
+.lightbox-button-right {
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.lightbox-button-left {
+	left: 25px;
+	background-position: 20px 0;
+}
+
+.lightbox-button-right {
+	right: 25px;
+	background-position: 40px 0;
+}
+
+	.lightbox-inactive {
+		opacity: 0.2;
+	}
+	
+.lightbox-slides {
+	height: 100%;
+}
+	
+.lightbox-slide {
+	position: absolute;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+	.lightbox-slide img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 100%;
+		max-height: 100vh;
+	}
+	
+	.lightbox-caption {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.9);
+		color: rgba(255, 255, 255, 1);
+		line-height: 50px;
+		font-size: 20px;
+		text-align: center;
+	}
+	
+.lightbox-loader {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999999999999;
+	opacity: 0;
+}
+
+	svg path,
+	svg rect{
+	  fill: #fff;
+	}
+.lightbox-slides {
+	transition: 500ms;
+}
